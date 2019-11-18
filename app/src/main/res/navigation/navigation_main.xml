@@ -1,0 +1,98 @@
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@+id/homeFragment">
+
+
+       <fragment
+           android:id="@+id/homeFragment"
+           android:name="com.gy.jetpack_node.ui.home.HomeFragment"
+           android:label="HomeFragment" >
+              <action android:id="@+id/action_navigationFragment_to_webFragment"
+                  app:destination="@id/webFragment"
+                  app:enterAnim="@anim/slide_in_right"
+                  app:exitAnim="@anim/slide_out_left"
+                  app:popEnterAnim="@anim/slide_in_left"
+                  app:popExitAnim="@anim/slide_out_right"/>
+
+       </fragment>
+
+       <fragment
+           android:id="@+id/webFragment"
+           android:name="com.gy.jetpack_node.ui.other.WebFragment"
+           android:label="WebFragment"
+           tools:layout="@layout/fragment_web">
+
+              <argument
+                  android:name="link"
+                  app:argType="string"/>
+              <argument android:name="title"
+                  app:argType="string"/>
+
+       </fragment>
+
+       <fragment
+           android:id="@+id/liveDataFragment"
+           android:name="com.gy.jetpack_node.ui.liveData.LiveDataFragment"
+           android:label="LiveDataFragment" />
+
+      <fragment
+           android:id="@+id/lifecyclesFragment"
+           android:name="com.gy.jetpack_node.ui.lifecycles.LifecyclesFragment"
+           android:label="LifecyclesFragment" />
+
+       <fragment
+           android:id="@+id/navigationFragment"
+           android:name="com.gy.jetpack_node.ui.navigation.NavigationFragment"
+           android:label="NavigationFragment" >
+
+           <action
+               android:id="@+id/action_navigationFragment_to_navSampleActivity"
+               app:destination="@id/navSampleActivity"
+               app:enterAnim="@anim/slide_in_right"
+               app:exitAnim="@anim/slide_out_left"
+               app:popEnterAnim="@anim/slide_in_left"
+               app:popExitAnim="@anim/slide_out_right"/>
+
+       </fragment>
+
+    <activity
+        android:id="@+id/navSampleActivity"
+        android:name="com.gy.jetpack_node.ui.navigation.activity.NavSampleActivity"
+        android:label="NavSampleActivity" />
+
+    <activity
+        android:id="@+id/viewModelShareActivity"
+        android:name="com.gy.jetpack_node.ui.viewmodel.ViewModelShareActivity"
+        android:label="activity_view_model_share"
+        tools:layout="@layout/activity_view_model_share" />
+    <activity
+        android:id="@+id/bottomNavSampleActivity"
+        android:name="com.gy.jetpack_node.ui.navigation.activity.BottomNavSampleActivity"
+        android:label="activity_bottom_nav_sample"
+        tools:layout="@layout/activity_bottom_nav_sample" />
+
+    <fragment
+        android:id="@+id/pagingDemoFragment"
+        android:name="com.gy.jetpack_node.ui.paging.PagingDemoFragment"
+        android:label="paging_demo_fragment"
+        tools:layout="@layout/paging_demo_fragment" />
+    <activity
+        android:id="@+id/pagingWithDaoActivity"
+        android:name="com.gy.jetpack_node.ui.paging.PagingWithDaoActivity"
+        android:label="activity_paging_with_dao"
+        tools:layout="@layout/activity_paging_with_dao" />
+    <activity
+        android:id="@+id/pagingWithNetWorkActivity"
+        android:name="com.gy.jetpack_node.ui.paging.PagingWithNetWorkActivity"
+        android:label="PagingWithNetWorkActivity" />
+    <fragment
+        android:id="@+id/moreSampleFragment"
+        android:name="com.gy.jetpack_node.ui.MoreSampleFragment"
+        android:label="fragment_more_sample"
+        tools:layout="@layout/fragment_more_sample" />
+
+
+</navigation>

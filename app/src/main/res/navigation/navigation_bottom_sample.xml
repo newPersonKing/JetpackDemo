@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:ignore="UnusedNavigation"
+            app:startDestination="@id/homeSampleFragment">
+
+    <fragment
+        android:id="@+id/homeSampleFragment"
+        android:name="com.gy.jetpack_node.ui.navigation.fg.SampleHomeFragment"
+        android:label="SampleHomeFragment" >
+
+        <action android:id="@+id/action_homeSampleFragment_to_dashBoardSampleFragment"
+            app:destination="@id/dashBoardSampleFragment"/>
+
+        <action android:id="@+id/action_homeSampleFragment_to_dashBoardSampleFragment_action"
+            app:destination="@id/dashBoardSampleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action android:id="@+id/action_homeSampleFragment_to_argsSampleFragment"
+            app:destination="@id/argsSampleFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/argsSampleFragment"
+        android:name="com.gy.jetpack_node.ui.navigation.fg.SampleArgsFragment"
+        android:label="SampleArgsFragment" >
+
+        <argument
+            android:name="argument_flag"
+            app:argType="integer"/>
+
+        <argument
+            android:name="argument_normal"
+            app:argType="string"/>
+
+        <argument
+            android:name="argument_bean"
+            app:argType="com.gy.jetpack_node.data.bean.Component"/>
+
+        <action android:id="@+id/action_argsSampleFragment_to_homeSampleFragment"
+            app:popUpTo="@id/homeSampleFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationSampleFragment"
+        android:name="com.gy.jetpack_node.ui.navigation.fg.SampleNotificationFragment"
+        android:label="SampleNotificationFragment" >
+
+        <action android:id="@+id/action_notificationSampleFragment_to_homeSampleFragment"
+            app:popUpTo="@id/homeSampleFragment"/>
+        <argument
+            android:name="deep_args"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/dashBoardSampleFragment"
+        android:name="com.gy.jetpack_node.ui.navigation.fg.SampleDashboardFragment"
+        android:label="SampleDashboardFragment" >
+
+        <action android:id="@+id/action_dashBoardSampleFragment_to_notificationSampleFragment"
+            app:destination="@id/notificationSampleFragment"/>
+
+    </fragment>
+
+</navigation>

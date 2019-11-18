@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/homeFragment"
+                android:icon="@drawable/ic_menu_home"
+                android:title="@string/menu_home"/>
+
+        <item
+                android:id="@+id/navigationFragment"
+                android:icon="@drawable/ic_menu_nav"
+                android:title="@string/menu_navigation"/>
+
+        <item
+                android:id="@+id/lifecyclesFragment"
+                android:icon="@drawable/ic_menu_lifecycle"
+                android:title="@string/menu_lifecycle"/>
+
+        <item
+                android:id="@+id/pagingDemoFragment"
+                android:icon="@drawable/ic_menu_code"
+                android:title="@string/menu_paging"/>
+
+        <item
+                android:id="@+id/moreSampleFragment"
+                android:icon="@drawable/ic_menu_more"
+                android:title="@string/menu_more"/>
+
+    </group>
+
+        <group android:id="@+id/group_other">
+            <item
+                    android:id="@+id/settingFragment"
+                    android:icon="@drawable/ic_menu_setting"
+                    android:title="@string/menu_setting"/>
+            <item
+                    android:id="@+id/aboutFragment"
+                    android:icon="@drawable/ic_menu_about"
+                    android:title="@string/menu_about"/>
+        </group>
+
+</menu>

@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">JetPackNote</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">Android Architecture Components Note</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_website">浏览器打开</string>
+    <string name="action_share">分享</string>
+    <string name="action_copy">复制链接</string>
+
+    <string name="menu_home">首页</string>
+    <string name="menu_more">更多案例</string>
+    <string name="menu_lifecycle">Lifecycles</string>
+    <string name="menu_navigation">Navigation</string>
+    <string name="menu_live_data">LiveData</string>
+    <string name="menu_view_model">ViewModel</string>
+    <string name="menu_paging">Paging</string>
+    <string name="menu_room">Room</string>
+    <string name="menu_work_manager">WorkManager</string>
+
+    <string name="menu_setting">设置</string>
+    <string name="menu_about">关于</string>
+    <string name="nav_bottom">BottomNavigation</string>
+    <string name="drawerlayout_nav">DrawerLayout_Nav</string>
+    <string name="navigation_desc">处理应用内导航所需的一切</string>
+    <string name="title_activity_nav_sample">NavSampleActivity</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sample_desc">具体使用可查看MainActivity的实现方式</string>
+    <string name="smaple_file_desc">MainActivity \n navigation/navigation_main.xml \n menu/activity_main_drawer.xml
+    </string>
+    <string name="title_activity_bottom_nav_sample">BottomNavSampleActivity</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">工作台</string>
+    <string name="title_args">带参数传递的Fragment</string>
+    <string name="title_notifications">通知</string>
+    <string name="navigation_sample_jump">跳转</string>
+    <string name="navigation_sample_jump_action">跳转(Action)</string>
+    <string name="navigation_sample_jump_arguments_normal">跳转(基本类型参数)</string>
+    <string name="navigation_sample_jump_arguments_bean">跳转(实体类参数)</string>
+    <string name="navigation_sample_jump_go_home">回到首页</string>
+    <string name="navigation_sample_deep_link">发送深层链接</string>
+    <string name="navigation_sample_deep_link_hint">请输入深层链接参数</string>
+    <string name="deep_link_args_hint">Deep Link 传递参数会显示在这…</string>
+    <string name="clip_hint">已复制到剪切板</string>
+    <string name="deeplink_hint">已发送深层链接通知，请在通知栏查看</string>
+    <string name="clear">清空</string>
+    <string name="close">关闭</string>
+    <string name="move">拖动</string>
+    <string name="start_monitor">1.开启监听</string>
+    <string name="start_location">2.开启定位</string>
+    <string name="location_msg">位置信息:</string>
+    <string name="recommend">提示：</string>
+    <string name="lifecycles_hint">1. 开启监听按钮，并打开悬浮控制台 \n2.开启定位后，会在控制台打印出监听的生命周期状态\n3.返回桌面或者进入后台，查看控制台输出变化</string>
+    <string name="demo">Demo 演示</string>
+    <string name="other">其他</string>
+    <string name="life_recommend">1.提示</string>
+    <string name="has_location_hint">您已经开启定位…</string>
+    <string name="viewmodel_hint">1.本Demo展示ViewModel的功能，屏幕中央为一个计时器，通过使用ViewModel存储计时器的值，将屏幕方向发生改变后，数据仍然存在不会销毁。
+        \n2.通过点击 查看Fragment共享Demo 可以查看两个Fragment共享了同一个ViewModel中的SeekBar的值。
+    </string>
+    <string name="livedata_hint">
+        1. 本Demo通过生命周期观察LiveData的值，并将它打印在控制台中，点击 开始观察数据 按钮，通过演示生命周期函数，返回桌面或者进入后台，查看LiveData对象的值。
+        \n2.
+        Map转换则演示通过转换存储在LiveData对象中的值，并向下传递转换后的数据。在此Demo中通过点击Map按钮增加UserId，驱动LiveDataViewModel中的userBean来改变，最后展示在TextView中。
+    </string>
+    <string name="start_oberver">开始观察数据</string>
+    <string name="viewmodel_fragment_demo">查看Fragment共享Demo</string>
+    <string name="seekbar_hint">
+        本Demo展示了一个Activity中存在两个Fragment，并且两个Fragment中需要同时使用SeekBar的数据。通过ViewModel实现两个Fragment中的SeekBar的值保持统一
+    </string>
+    <string name="map_transform">MAP转换ID+1</string>
+    <string name="map_transform_hint">MAP转换:</string>
+    <string name="paging_with_network">PagingWithNetWork</string>
+    <string name="paging_with_dao">PagingWithDao</string>
+
+    <string name="drawer_about">关于JetPackNote</string>
+    <string name="about_version">版本号</string>
+    <string name="about_use">JetPackNote用途</string>
+    <string name="about_license">License</string>
+    <string name="about_follow">关注我</string>
+    <string name="about_blog">博客</string>
+    <string name="about_close">关闭</string>
+    <string name="about_rate">评分</string>
+    <string name="about_license_content">Copyright 2019 Hankkin \n</string>
+    <string name="about_use_content">您好，欢迎使用JetpackNote！\nJetpackNote 是一款基于谷歌官方组件Jetpack开发的笔记项目，项目中包含了对各大组件的源码分析、Demo使用：Navigation、Lifecycles、Paging、LiveData、ViewModel等...
+        \n项目使用Kotlin语言进行编写，依赖库截止代码编写时为最新版本，具体相关介绍请查看Github。
+    </string>
+
+    <string name="article_detail_share">分享</string>
+    <string name="article_detail_open">浏览器打开</string>
+    <string name="setting_common">通用</string>
+    <string name="setting_check_update">检查更新</string>
+    <string name="setting_help">帮助</string>
+    <string name="setting_project">项目地址</string>
+</resources>

@@ -1,0 +1,23 @@
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@+id/navSampleFirstFragment">
+
+    <fragment
+        android:id="@+id/navSampleFirstFragment"
+        android:name="com.gy.jetpack_node.ui.navigation.NavSampleFirstFragment"
+        android:label="NavSampleFirstFragment" />
+
+    <fragment
+        android:id="@+id/moreSampleFragment"
+        android:name="com.gy.jetpack_node.ui.MoreSampleFragment"
+        android:label="fragment_more_sample"
+        tools:layout="@layout/fragment_more_sample" />
+    <activity
+        android:id="@+id/viewModelShareActivity"
+        android:name="com.gy.jetpack_node.ui.viewmodel.ViewModelShareActivity"
+        android:label="activity_view_model_share"
+        tools:layout="@layout/activity_view_model_share" />
+</navigation>
